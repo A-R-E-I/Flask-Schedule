@@ -1,21 +1,26 @@
 <html>
 	<head>
 		<title>Schedule</title>
+		<link rel="stylesheet" href="/static/ScheduleStyle.css">
 	</head>
 	
 	<body>
 		<h1>Input the following information</h1>
 		<form method="post">
-			<label id="lblcoursename1">Course name:</label>
-			<input type="text" name="txtcoursename1">
-			<label id="lblteacher1">Teacher:</label>
-			<input type="text" name="txtteacher1"> <br>
-			
-			<label id="lblcoursename2">Course name:</label>
-			<input type="text" name="txtcoursename2">
-			<label id="lblteacher2">Teacher:</label>
-			<input type="text" name="txtteacher2"> <br>
+			<table id="InputInfo">
+				<tr>
+					<th><label id="lblperiod">Period</label></th>
+					<th><label id="lblcoursename">Course name</label></th>
+					<th><label id="lblteachname">Teacher name</label></th>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod1"></label></td>
+					<td><input type="text" name="txtcoursename1"></td>
+					<td><input type="text" name="txtteacher1"></td>	
+				</tr>				
+			</table>
 			<button type="submit">Submit</button>
+			
 		</form>
 	</body>
 </html>
