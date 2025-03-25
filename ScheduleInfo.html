@@ -1,7 +1,8 @@
 <html>
 	<head>
 		<title>Schedule</title>
-		<link rel="stylesheet" href="/static/ScheduleStyle.css">
+		<link rel="stylesheet" href="\static\ScheduleStyle.css">
+		<script src="\static\ScheduleCollect.js"></script>
 	</head>
 	
 	<body>
@@ -12,14 +13,58 @@
 					<th><label id="lblperiod">Period</label></th>
 					<th><label id="lblcoursename">Course name</label></th>
 					<th><label id="lblteachname">Teacher name</label></th>
+					<th><label id="lblteachname">Room Number</label></th>
 				</tr>
 				<tr>
-					<td><label type="text" name="txtperiod1"></label></td>
-					<td><input type="text" name="txtcoursename1"></td>
+					<td><label type="text" name="txtperiod1">1</label></td>
+					<td><input type="text" name="txtcoursename1" autofocus></td>
 					<td><input type="text" name="txtteacher1"></td>	
-				</tr>				
+					<td><input type="text" name="txtroom1"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod2">2</label></td>
+					<td><input type="text" name="txtcoursename2"></td>
+					<td><input type="text" name="txtteacher2"></td>	
+					<td><input type="text" name="txtroom2"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod3">3</label></td>
+					<td><input type="text" name="txtcoursename3"></td>
+					<td><input type="text" name="txtteacher3"></td>	
+					<td><input type="text" name="txtroom3"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod4">4</label></td>
+					<td><input type="text" name="txtcoursename4"></td>
+					<td><input type="text" name="txtteacher4"></td>	
+					<td><input type="text" name="txtroom4"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod5">5</label></td>
+					<td><input type="text" name="txtcoursename5"></td>
+					<td><input type="text" name="txtteacher5"></td>	
+					<td><input type="text" name="txtroom5"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod6">6</label></td>
+					<td><input type="text" name="txtcoursename6"></td>
+					<td><input type="text" name="txtteacher6"></td>	
+					<td><input type="text" name="txtroom6"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod7">7</label></td>
+					<td><input type="text" name="txtcoursename7"></td>
+					<td><input type="text" name="txtteacher7"></td>	
+					<td><input type="text" name="txtroom7"></td>
+				</tr>
+				<tr>
+					<td><label type="text" name="txtperiod8">8</label></td>
+					<td><input type="text" name="txtcoursename8"></td>
+					<td><input type="text" name="txtteacher8"></td>	
+					<td><input type="text" name="txtroom8"></td>
+				</tr>
 			</table>
-			<button type="submit">Submit</button>
+			<button type="submit" id="btnenter">Submit</button>
 			
 		</form>
 	</body>

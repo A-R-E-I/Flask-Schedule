@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Schedule Output</title>
+		<link rel="stylesheet" href="\static\ScheduleStyle.css">
+	</head>
+	
+	<body>
+		<form method="post">
+			<table id="tbinfo">
+				<tr>
+					{% for header in headings %}
+					<th>{{header}}</th>
+					{% endfor %}
+				</tr>
+				{% for row in data %}
+				<tr>
+					{% for cell in row %}
+					<th>{{cell}}</th>
+					{% endfor %}
+				</tr>
+				{% endfor %}
+			</table>
+		</form>
+	</body>
+</html>

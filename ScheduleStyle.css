@@ -1,11 +1,13 @@
 table, th, td
 {
-	border: 1px solid black:
+	border: 1px solid black;
 	border-collapse: collapse;
 }
 
 label
 {
-	display:inline-block;
-	width:50px;
+	display: inline-block;
+	width:100px;
+	text-align: center;
 }
+
