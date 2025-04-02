@@ -43,18 +43,18 @@ function addListener()
 
 function CheckInfo()
 {
-	var course1, course2
+	
 	limit = 8
-	for(let i = 0; i < limit; i++)
-	{
-		alert("hi")
-		course1 = document.getElementById("txtcoursename1").value;
-		course2 = document.getElementById("txtcoursename2").value;
-		if (course[i] == " ")
+	
+	for(let i = 1; i < limit; i++)
+	{ 
+		
+		let course = document.getElementById("txtcoursename" + String(i)).value;
+		alert(course)
+		if (course == "")
 		{
 			alert("Information is missing!");
-			i = 8
-			InitControls();
+			break;
 		}
 	}
 }
